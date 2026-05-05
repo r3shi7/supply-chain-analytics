@@ -1,5 +1,19 @@
-.venv/
 venv/
+myenv/
 __pycache__/
-data/
 *.pyc
+.ipynb_checkpoints/
+.env
+.vscode/
+.idea/
+.DS_Store
+
+# Don't commit data files (regeneratable from script)
+data/raw/*
+data/processed/*
+data/external/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/external/.gitkeep
+
+*.pbix.tmp
